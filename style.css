@@ -1,0 +1,47 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333;
+}
+.box {
+    width: 300px;
+    height: 300px;
+    margin: 20px;  
+    background: salmon;
+    /* animation-name: spin ; */
+    /* animation-duration: 2s; */
+    /* animation-iteration-count: 1; */
+    /* animation-fill-mode: forwards; */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+    /* animation-timing-function: ease-in; */
+    animation:spin 2s ease-in forwards;
+
+    
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg)
+    }
+    
+    to {
+        transform: rotate(720deg);
+        background: green;
+    }
+
+    /* 0% {
+        transform: rotate(0deg)
+    }
+    50% {
+        background: lightblue;
+    }
+    100% {
+        transform: rotate(720deg);
+        background: green;
+    } */
+}
